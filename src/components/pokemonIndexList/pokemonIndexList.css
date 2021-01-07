@@ -1,0 +1,14 @@
+.index-container {
+  width: 30%;
+  float: left;
+  max-height: 430px;
+  overflow: scroll;
+  margin-top: 70px;
+  margin-left: 50px;
+  overflow-x: hidden;
+}
+.page-buttons {
+  position: absolute;
+  top: 80px;
+  left: 100px;
+}
