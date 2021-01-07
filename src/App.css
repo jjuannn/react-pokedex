@@ -1,0 +1,7 @@
+body {
+  position: fixed;
+  background-image: url("./img/fondo1.png");
+  background-size: cover;
+  overflow-x: hidden;
+  width: 100%;
+}
