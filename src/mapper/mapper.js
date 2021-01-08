@@ -14,15 +14,25 @@ export function fromApiToEntity(pokemon) {
   } = pokemon;
 
   const selectedSprites = [sprites.front_default, sprites.back_default];
-
+  const calculatedHeight = height * 10;
+  const selectedStats = stats.reduce(
+    (acc, stat) => ({ ...acc, [stat.stat.name]: stat.base_stat }),
+    {}
+  );
+  const selectedAbilities = abilities.map((abilitie) => {
+    return abilitie.ability.name;
+  });
+  const selectedTypes = types.map((type) => {
+    return type.type.name;
+  });
   return new Pokemon(
     id,
     name,
     weight,
-    height,
+    calculatedHeight,
     selectedSprites,
-    stats,
-    abilities,
-    types
+    selectedStats,
+    selectedAbilities,
+    selectedTypes
   );
 }
