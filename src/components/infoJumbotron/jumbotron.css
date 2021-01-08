@@ -1,0 +1,10 @@
+.jumbotron-container {
+  width: 60%;
+  float: right;
+  margin-right: 20px;
+  margin-top: 70px;
+}
+.info-jumbotron {
+  height: 427px;
+  font-family: "Roboto Mono", monospace;
+}

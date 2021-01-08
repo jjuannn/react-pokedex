@@ -1,6 +1,11 @@
 .pokedex-title {
   text-align: center;
   background: #e63946;
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto Mono", monospace;
   color: whitesmoke;
+}
+.title-text,
+.title-text:hover {
+  color: whitesmoke;
+  text-decoration: none;
 }

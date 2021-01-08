@@ -1,0 +1,24 @@
+.pokemon-name {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.pokemon-img {
+  width: 200px;
+  height: auto;
+  border: rgb(0, 0, 0) 1px solid;
+  border-radius: 10%;
+  margin-left: 5px;
+  background: lightcoral;
+}
+.pokemon-card {
+  margin: auto;
+  width: 70%;
+  background: whitesmoke;
+  font-family: "Roboto Mono", monospace;
+  vertical-align: middle;
+  height: 550px;
+}
+.card-img-container {
+  text-align: center;
+  padding: 5px;
+}
