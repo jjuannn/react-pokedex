@@ -3,22 +3,30 @@
   font-size: 2rem;
 }
 .pokemon-img {
-  width: 200px;
+  width: 150px;
   height: auto;
   border: rgb(0, 0, 0) 1px solid;
   border-radius: 10%;
+  margin-top: 5px;
   margin-left: 5px;
   background: lightcoral;
 }
 .pokemon-card {
   margin: auto;
   width: 70%;
-  background: whitesmoke;
   font-family: "Roboto Mono", monospace;
   vertical-align: middle;
   height: 550px;
-}
-.card-img-container {
   text-align: center;
-  padding: 5px;
+}
+.card-info-container {
+  margin-top: 10px;
+}
+.attribute-item {
+  display: inline-block;
+  margin-right: 15px;
+  background: lightcoral;
+}
+.stat-in-p {
+  background: lightcoral;
 }
