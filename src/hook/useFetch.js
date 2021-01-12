@@ -1,4 +1,3 @@
-import { getPage } from "../api/api.js";
 import { useEffect, useState } from "react";
 
 export default function useFetch(fetchFunction, param) {
