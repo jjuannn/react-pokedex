@@ -1,0 +1,8 @@
+.jumbotron-error-container {
+  margin: auto;
+  float: none;
+  width: 60%;
+}
+.error-jumbotron {
+  font-family: "Roboto Mono", monospace;
+}
