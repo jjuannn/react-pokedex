@@ -1,3 +1,13 @@
+.loading-card {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  padding: 40px;
+}
+.loading-circle {
+  margin: auto;
+  margin-bottom: 20px;
+}
 .loading-text {
   font-family: "Roboto Mono", monospace;
 }
