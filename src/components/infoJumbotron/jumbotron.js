@@ -18,6 +18,7 @@ export default function InfoJumbotron({ count }) {
           href="https://pokeapi.co/"
           target="_blank"
           role="button"
+          rel="noreferrer"
         >
           Learn more
         </a>
