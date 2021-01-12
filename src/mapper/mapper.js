@@ -1,7 +1,6 @@
 import { Pokemon } from "../entities/pokemon.js";
 
 export function fromApiToEntity(pokemon) {
-  //console.log(pokemon);
   const {
     id,
     name,
@@ -15,10 +14,12 @@ export function fromApiToEntity(pokemon) {
 
   const selectedSprites = [sprites.front_default, sprites.back_default];
   const calculatedHeight = height * 10;
-  const selectedStats = stats.reduce(
-    (acc, stat) => ({ ...acc, [stat.stat.name]: stat.base_stat }),
-    {}
-  );
+  const hp = stats[0].base_stat;
+  const attack = stats[1].base_stat;
+  const defense = stats[2].base_stat;
+  const specialAttack = stats[3].base_stat;
+  const specialDefense = stats[4].base_stat;
+  const speed = stats[5].base_stat;
   const selectedAbilities = abilities.map((abilitie) => {
     return abilitie.ability.name;
   });
@@ -31,8 +32,13 @@ export function fromApiToEntity(pokemon) {
     weight,
     calculatedHeight,
     selectedSprites,
-    selectedStats,
     selectedAbilities,
-    selectedTypes
+    selectedTypes,
+    attack,
+    defense,
+    hp,
+    specialAttack,
+    specialDefense,
+    speed
   );
 }
