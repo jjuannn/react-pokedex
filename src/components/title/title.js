@@ -1,12 +1,13 @@
 import React from "react";
 import "./title.css";
+import { Link } from "react-router-dom";
 export default function Title() {
   return (
     <header className="pokedex-title">
       <h1>
-        <a className="title-text" href="/">
+        <Link className="title-text" to="/">
           Pokedex
-        </a>
+        </Link>
       </h1>
     </header>
   );
