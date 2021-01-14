@@ -7,8 +7,6 @@ import Loading from "../loading/loading.js";
 import "./pokemonCard.css";
 import "bootstrap/dist/css/bootstrap.css";
 import ErrorMessage from "../errorMessage/errorMessage.js";
-import { Link } from "react-router-dom";
-
 export default function PokemonCard() {
   const { name } = useParams();
   const { data, error, loading } = useFetch(getPokemonInfo, name);
@@ -93,9 +91,9 @@ export default function PokemonCard() {
                 })}
               </p>
             </div>
-            <Link to="/" className="btn btn-dark">
+            <a href="/" className="btn btn-dark">
               <i className="fas fa-arrow-left"></i> Back to list
-            </Link>
+            </a>
           </div>
         </div>
       </div>

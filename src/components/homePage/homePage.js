@@ -11,14 +11,6 @@ export default function HomePage() {
   const [offset, setOffset] = useState(0);
   const { data, error, loading } = useFetch(getPage, offset);
 
-  if (loading) {
-    return <Loading />;
-  }
-
-  if (error) {
-    return <ErrorMessage error={error} />;
-  }
-
   if (data) {
     return (
       <>
@@ -43,5 +35,10 @@ export default function HomePage() {
       </>
     );
   }
-  return null;
+  return (
+    <>
+      {loading && <Loading />}
+      {error && <ErrorMessage error={error} />}
+    </>
+  );
 }
