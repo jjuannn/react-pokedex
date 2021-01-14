@@ -7,8 +7,8 @@ import PokemonCard from "./components/pokemonCard/pokemonCard";
 function App() {
   return (
     <>
-      <Title />
       <Router>
+        <Title />
         <Switch>
           <Route path="/" exact>
             <HomePage />
