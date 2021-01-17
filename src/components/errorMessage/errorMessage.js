@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./errorMessage.css";
 
 export default function ErrorMessage(error) {
@@ -9,14 +10,14 @@ export default function ErrorMessage(error) {
         <h1 className="display-4">An error has ocurred!</h1>
         <p className="lead">Something went wrong :/</p>
         <hr className="my-4" />
-        <a
+        <Link
           className="btn btn-danger btn-lg"
-          href="/"
+          to="/"
           role="button"
           rel="noreferrer"
         >
           Back to home
-        </a>
+        </Link>
       </div>
     </div>
   );
