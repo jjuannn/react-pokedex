@@ -11,8 +11,6 @@ import offsetContext from "../../context/offsetContext.js";
 export default function HomePage() {
   const { pageOffset, setPageOffset } = useContext(offsetContext);
   const { data, error, loading } = useFetch(getPage, pageOffset);
-  console.log(pageOffset);
-
   if (loading) {
     return <Loading />;
   }
