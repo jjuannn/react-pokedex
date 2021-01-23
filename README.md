@@ -4,5 +4,4 @@ A Pokedex made with React
 
 ## To Do :
 
-- [ ] Implement LocalStorage
-- [ ] ?¿
+- [ ] keep implementing new things as I learn :)
